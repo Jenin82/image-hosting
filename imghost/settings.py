@@ -132,9 +132,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localtest.me:5173',
-    'https://karghewale.vercel.app',
-    'https://opengrad.in',
-    'https://fundesign.in'
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localtest.me:5173',
+#     'https://karghewale.vercel.app',
+#     'https://opengrad.in',
+#     'https://fundesign.in'
+# ]
+
+CORS_ALLOWED_ORIGIN_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
